@@ -1,4 +1,4 @@
-## webpack+react 配置说明
+## webpack 构建项目说明
 
 ### 1 开始
 安装依赖  
