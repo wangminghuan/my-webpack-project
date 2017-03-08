@@ -1,16 +1,15 @@
 var webpack=require('webpack');
 var path=require("path");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 //postcss-loader中autoprefixer插件
 var autoprefixer = require('autoprefixer');
 
 var config={};
 
-//忽略下面模板，打包时无需打入
+//忽略下面模块，打包时将不会打入
 config.externals={
-    'react': 'React',
-    'react-dom': 'ReactDOM'
+    /*'react': 'React',
+    'react-dom': 'ReactDOM'*/
 };
 config.module={
 	loaders:[
