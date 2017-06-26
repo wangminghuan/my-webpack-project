@@ -1,40 +1,47 @@
 {
-  "name": "webpack-project",
+  "name": "test",
   "version": "1.0.0",
-  "description": "安装依赖",
+  "description": "",
   "main": "index.js",
-  "directories": {
-    "doc": "doc"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "cross-env NODE_ENV=production webpack"
+    "start": "cross-env NODE_ENV=dev node server.js",
+    "build": "cross-env NODE_ENV=prod webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wangminghuan/my-webpack-project.git"
+    "url": "git+https://github.com/wangminghuan/my-react-webpack.git"
   },
-  "author": "w.m.h",
+  "author": "wangminghuan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wangminghuan/my-webpack-project/issues"
+    "url": "https://github.com/wangminghuan/my-react-webpack/issues"
   },
-  "homepage": "https://github.com/wangminghuan/my-webpack-project#readme",
+  "homepage": "https://github.com/wangminghuan/my-react-webpack#readme",
   "devDependencies": {
     "autoprefixer": "^6.7.6",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
     "cross-env": "^3.2.3",
     "css-loader": "^0.26.2",
+    "express": "^4.15.0",
     "extract-text-webpack-plugin": "^2.0.0",
     "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
     "open-browser-webpack-plugin": "0.0.4",
+    "postcss-flexboxfixer": "0.0.5",
     "postcss-loader": "^1.3.3",
+    "prop-types": "^15.5.4",
+    "sass-loader": "^6.0.5",
     "style-loader": "^0.13.2",
     "url-loader": "^0.5.8",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-dev-server": "^2.4.1",
+    "webpack-hot-middleware": "^2.17.1"
+  },
+  "dependencies": {
+    "webpack": "^2.2.1"
   }
 }
