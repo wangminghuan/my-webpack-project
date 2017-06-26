@@ -1,5 +1,6 @@
 @import "../common/css/pxToRem.scss";
-:local(.wrapClass) {
+:local(.wrapClass){
+	display: flex;
     color: red;
     font-size: 16px;
     margin-top: pxToRem(10px);

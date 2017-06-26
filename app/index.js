@@ -1,4 +1,4 @@
-import "./common/css/reset.css";
+import "./common/css/reset.scss";
 import header from "./modules/header";
 
 document.addEventListener("DOMContentLoaded", function(){
