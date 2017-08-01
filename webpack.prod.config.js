@@ -31,16 +31,16 @@ config.plugins = [
   //允许错误不打断程序
   new webpack.NoEmitOnErrorsPlugin(),
   //提取css 不需要注销即可
-  new ExtractTextPlugin("styles.css"),
+  new ExtractTextPlugin("css/styles.css"),
   // 压缩js
-  new webpack.optimize.UglifyJsPlugin({
-    output: {
-      comments: false, // remove all comments
-    },
-    compress: {
-      warnings: false
-    }
-  }),
+  // new webpack.optimize.UglifyJsPlugin({
+  //   output: {
+  //     comments: false, // remove all comments
+  //   },
+  //   compress: {
+  //     warnings: false
+  //   }
+  // }),
   // 补全前缀
   new webpack.LoaderOptionsPlugin({
     options: { // pass stuff to the loader

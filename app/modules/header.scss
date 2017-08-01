@@ -5,4 +5,7 @@
     font-size: 16px;
     margin-top: pxToRem(10px);
     text-align: center;
+    background-image: url("../common/img/bg.png");
+    background-repeat: no-repeat;
+    background-size: pxToRem(320px) auto;
 }
