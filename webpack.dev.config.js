@@ -12,15 +12,22 @@ config.entry = [ //利用中间件实现热更新，reload=true配置如果热�
   __PATH.ENTRY
 ];
 config.module = {
-  loaders: [{
-    test: /\.scss$/,
-    include: __PATH.APP,
-    exclude: /node_modules/,
-    loader: "style-loader!css-loader?minimize!postcss-loader!sass-loader"
-  }]
+  loaders: [
+    {
+      test: /\.(png|jpg|gif)$/,
+      include: __PATH.APP,
+      exclude: /node_modules/,
+      loader: 'url-loader?limit=2000&name=img/[name].[ext]'
+    }, {
+      test: /\.scss$/,
+      include: __PATH.APP,
+      exclude: /node_modules/,
+      loader: "style-loader!css-loader?minimize!postcss-loader!sass-loader"
+    }
+  ]
 };
 config.plugins = [
-  new webpack.HotModuleReplacementPlugin(), 　　 //webpack热替换插件  
+  new webpack.HotModuleReplacementPlugin(), //webpack热替换插件
 
   //new HtmlWebpackPlugin(),
   //补全前缀
@@ -37,6 +44,5 @@ config.plugins = [
         url: 'http://localhost:3000'
     }),*/
 ]
-
 
 module.exports = config
