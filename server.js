@@ -14,11 +14,12 @@ var server = new WebpackDevServer(webpack(webpackConfig), {
         colors: true
     }
 });
-server.listen(3001, 'localhost', function (err, result) {
+var port=3007;
+server.listen(port, 'localhost', function (err, result) {
     if (err) {
         console.log(err);
     }
-    console.log('listening at localhost:3001...');
+    console.log('listening at localhost:'+port+'...');
 });
 
 
