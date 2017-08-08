@@ -17,11 +17,11 @@ config.module = {
     {
       test: /\.(gif|png|jpe?g|svg)$/i,
       loaders: [
-        'url-loader?limit=2000&name=img/[name]_min.[ext]', {
+        'url-loader?limit=2000&name=img/[name].[ext]', {
          loader: 'image-webpack-loader',
           query: {
             // 根据环境判断是否启用资源压缩
-            // enabled: process.env.NODE_ENV === 'prod', 
+            // enabled: process.env.NODE_ENV === 'prod',
             mozjpeg: {
               progressive: true, // 创建基准jpeg文件
             },

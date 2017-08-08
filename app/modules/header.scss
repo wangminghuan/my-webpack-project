@@ -10,6 +10,9 @@
     background-repeat: no-repeat;
     background-size: pxToRem(320px) auto;
 }
-.test{
+.close{
 	background-image: url(../common/img/icon-close.png);
+	height: 50px;
+	width: 50px;
+	display: inline-block;
 }

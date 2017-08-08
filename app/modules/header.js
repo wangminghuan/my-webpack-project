@@ -7,7 +7,7 @@ import {browserInfo} from "../common/js/utils";
 
 export default function() {
 	let domStr='<div class='+local.wrapClass+'>';
-	    domStr+='当前浏览器标识为：'+browserInfo;
-	    domStr+='</div>';
+	    domStr+='<span>当前浏览器标识为：'+browserInfo;
+	    domStr+='</span><i class="close"></i></div>';
     return domStr
 }
