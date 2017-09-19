@@ -8,7 +8,7 @@ var config = {};
 config.devtool = '#cheap-module-source-map';
 config.entry = [ //利用中间件实现热更新，reload=true配置如果热更新失败，强制刷新页面
   'webpack/hot/dev-server',
-  'webpack-dev-server/client?http://localhost:3001',
+  'webpack-dev-server/client?http://localhost:3007',
   __PATH.ENTRY
 ];
 config.module = {

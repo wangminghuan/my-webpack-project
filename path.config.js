@@ -1,4 +1,21 @@
 var path=require('path');
+var argv=null;
+try { 
+	console.log( process.env);
+ argv = JSON.parse(process.env.npm_config_argv).original;
+}catch(ex){    
+	argv = process.argv;
+}
+
+if(argv[argv.length-1]=="undefined" ||argv[argv.length-1]=="" ) {
+
+	console.log("当前项目目录不存在，请确认参数！");
+
+	return false;
+
+}
+var activeProject=argv[argv.length-1].replace(/^--/g,"");
+console.log(activeProject);
 //定义了一些文件夹的路径
 var __path={
 	ENTRY: path.resolve(__dirname, 'app/index.js'),
